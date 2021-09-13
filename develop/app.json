@@ -1,0 +1,7 @@
+{
+  "apps": [
+    { "name": "cv-service", "container": "cvservice", "port": 3002 },
+    { "name": "cv-app", "container": "cvapp", "port": 3001 }
+  ],
+  "local": []
+}
