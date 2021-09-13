@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo
+    hostname: mongo
+    container_name: mongo
+    security_opt:
+      - seccomp:unconfined
+    networks:
+      - cv
+    ports:
+      - "27018:27017"
+  cvservice:
+    build: ./cv-service
+    environment:
+      - NODE_ENV=production
+    networks:
+      - cv
+    ports:
+      - "2002:2002"
+    depends_on:
+      - mongo
+  cvapp:
+    build: ./cv-app
+    networks:
+      - cv
+    ports:
+      - "2000:2000"
+    depends_on:
+      - cvservice
+networks:
+  cv:
+    driver: bridge

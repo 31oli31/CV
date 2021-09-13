@@ -1,0 +1,42 @@
+@import "../../../theme/selectedTheme.scss";
+
+#bootstrap-overrides {
+  /* 100+1=101 priority score, yay! */
+
+  .modal-content {
+    @include themed() {
+      background-color: t("lightBackground");
+      color: t("text");
+    }
+    border-radius: 20px;
+  }
+  .modal-header {
+    @include themed() {
+      color: t("title");
+      border-bottom: 1px solid t("darkline");
+    }
+    &::hover {
+      color: red;
+    }
+  }
+  .btn-close {
+    @include themed() {
+      color: t("primary");
+    }
+  }
+  .modal-footer {
+    @include themed() {
+      border-top: 1px solid t("darkLine");
+    }
+  }
+}
+
+.modal {
+  @include themed() {
+    background-color: t("blur");
+  }
+}
+
+#title {
+  color: red;
+}

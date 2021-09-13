@@ -1,0 +1,6 @@
+{
+  "db": "mongodb://mongo:27018/",
+  "api": {
+    "cvService": "http://cvservice:2002"
+  }
+}

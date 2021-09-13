@@ -1,0 +1,87 @@
+@import "~theme/default";
+@import "~theme/selectedTheme.scss";
+
+.app {
+  @include themed() {
+    background-color: t("background");
+  }
+  min-height: 100vh;
+}
+
+.viewButton {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.pageSettings {
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.pageSettings > * {
+  margin: 10px;
+}
+
+#bootstrap-overrides {
+  .btn-primary {
+    border-radius: 20px;
+    border-width: 2px;
+
+    @include themed() {
+      background-color: t("buttonColor");
+      color: t("buttonText");
+      border-color: t("buttonColor");
+    }
+  }
+  .btn-primary:hover {
+    @include themed() {
+      background-color: t("buttonHover");
+    }
+  }
+  .btn-secondary {
+    width: 100%;
+    @include themed() {
+      color: t("buttonTextInver");
+      background-color: t("buttonColorInver");
+    }
+    border-radius: 20px;
+    &:hover {
+      cursor: pointer;
+      @include themed() {
+        background-color: t("buttonHoverInver");
+      }
+    }
+  }
+
+  //Navbar
+  .navbar-default {
+    @include themed() {
+      background-color: t("navbar");
+      color: t("title");
+    }
+  }
+  /* Title */
+  .navbar-default .navbar-brand {
+    @include themed() {
+      background-color: t("navbar");
+      color: t("title");
+    }
+  }
+  /* Link */
+  .navbar-default .navbar-nav > li > a {
+    @include themed() {
+      background-color: t("navbar");
+      color: t("title");
+    }
+  }
+}
+
+.themeSwitch {
+  margin-left: 10px;
+  align-self: center;
+}
+.darkModeLabel {
+  align-self: center;
+  margin-left: 5px;
+  font-size: 17px;
+}

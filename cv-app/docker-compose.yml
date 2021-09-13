@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  cvapp:
+    container_name: cvapp
+    image: cvapp
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - 2000:2000

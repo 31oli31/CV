@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="slice" xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="body_1" ">
+
+<defs>
+    <linearGradient transform=" matrix(1 0 0 1 0 0)" id="1" x1="0" y1="-40" x2="1920" y2="-40">
+    <stop stop-color="#40A5F6" offset="0%" />
+    <stop stop-color="#FD0EDA" offset="100%" />
+    </linearGradient>
+    </defs>
+
+    <g transform="matrix(0.099609375 0 0 0.10026042 0 0)">
+        <g transform="matrix(-1 1.5099579E-07 -1.5099579E-07 -1 0 0)">
+        </g>
+        <path transform="matrix(-1 1.5099579E-07 -1.5099579E-07 -1 0 0)"
+            d="M0 67C 273 183 822 -40 1920 106L1920 106L1920 359L0 359L0 67z" stroke="none" fill="url(#1)" />
+    </g>
+</svg>

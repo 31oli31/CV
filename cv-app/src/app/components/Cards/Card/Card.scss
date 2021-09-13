@@ -1,0 +1,60 @@
+@import "../../../theme/default.scss";
+@import "../../../theme/selectedTheme.scss";
+
+.hide {
+  opacity: 0;
+}
+
+.Card {
+  width: 350px;
+  height: 350px;
+  margin-top: 40px;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 22px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 22px -4px rgba(0, 0, 0, 0.8);
+  transition-duration: 0.25s;
+  &:hover .hide {
+    opacity: 1;
+  }
+  &-Overlay {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 23px;
+    @include themed() {
+      background-color: t("cardBackground");
+    }
+  }
+
+  &:hover {
+    display: block;
+    color: $white;
+    transform: scale(1.051, 1.05);
+    cursor: pointer;
+    .Card-Overlay {
+      @include themed() {
+        background-color: t("cardHover");
+      }
+    }
+  }
+
+  &-Header {
+    @include themed() {
+      color: t("title");
+    }
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &-Body {
+    @include themed() {
+      color: t("text");
+    }
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    font-size: 16px;
+  }
+}
+.previewList {
+  padding-left: 1rem;
+}
