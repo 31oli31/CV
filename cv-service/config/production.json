@@ -1,0 +1,5 @@
+{
+  "url": {
+    "mongodb": "mongodb://mongo:27017/"
+  }
+}

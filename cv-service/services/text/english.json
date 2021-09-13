@@ -1,0 +1,73 @@
+{
+  "type": "english",
+  "cards": [
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    },
+    {
+      "title": "School",
+      "body": "When I talk about things about school and teacher and students",
+      "image": "sstudents"
+    }
+  ],
+  "buttons": {
+    "close": "close",
+    "open": "open",
+    "changeView": "change view"
+  },
+  "theme": {
+    "light": "dark",
+    "dark": "light"
+  },
+  "language": {
+    "english": "en",
+    "german": "de"
+  }
+}

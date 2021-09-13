@@ -1,0 +1,68 @@
+{
+  "type": "german",
+  "cards": [
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "sstudents"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Schule",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    }
+  ],
+  "buttons": {
+    "close": "schliesen",
+    "open": "öffnen",
+    "changeView": "Ansicht wechseln"
+  },
+  "theme": {
+    "light": "hell",
+    "dark": "dunkel"
+  },
+  "language": {
+    "english": "en",
+    "german": "de"
+  }
+}
