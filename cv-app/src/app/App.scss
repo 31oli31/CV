@@ -56,10 +56,11 @@
   //Navbar
   .navbar-default {
     @include themed() {
-      background-color: t("navbar");
       color: t("title");
     }
   }
+
+
   /* Title */
   .navbar-default .navbar-brand {
     @include themed() {
@@ -85,3 +86,4 @@
   margin-left: 5px;
   font-size: 17px;
 }
+

@@ -1,6 +1,6 @@
 
 default:
-	$(MAKE) stop && $(MAKE) build && $(MAKE) run
+	$(MAKE) build && $(MAKE) run
 
 build: 
 	cd cv-service && $(MAKE) build

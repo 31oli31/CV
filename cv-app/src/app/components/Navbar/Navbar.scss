@@ -1,0 +1,9 @@
+
+.navbar-Custom {
+  transition:500ms ease;
+  background-color: transparent;
+  &-scrolled {
+    background-color: #ffffffab;
+    backdrop-filter: blur(16px);
+  }
+}

@@ -1,6 +1,16 @@
+@import "../../../theme/default.scss";
+@import "../../../theme/selectedTheme.scss";
+
 .CardList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+}
+
+.CardGroup{
+  font-size: 24px;
+  @include themed() {
+    color: t("title");
+  }
 }

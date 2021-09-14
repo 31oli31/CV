@@ -1,53 +1,93 @@
 {
   "type": "german",
+  "cardGroups": {
+    "school": "Ausbildung",
+    "work": "Arbeit",
+    "intership": "Praktikum",
+    "projects": "Projekte"
+  },
   "cards": [
     {
-      "title": "Schule",
+      "title": "WIN Master & Bachelor",
+      "group": "school",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
-      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
-      "image": "sstudents"
-    },
-    {
-      "title": "Schule",
+      "title": "FOS",
+      "group": "school",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "Realschule",
+      "group": "school",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "PM Werkstudent CHECK24",
+      "group": "work",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "Full Stack Developer CHECK24",
+      "group": "work",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "DEVOLTI",
+      "group": "work",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "it.wiwi Uni Augsburg",
+      "group": "work",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "Elektriker & Mechaniker Grenzebach",
+      "group": "intership",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     },
     {
-      "title": "Schule",
+      "title": "Architektur Büro",
+      "group": "intership",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Altenpfleger",
+      "group": "intership",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Terrassenplaner",
+      "group": "projects",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Lebenslaufwebsite",
+      "group": "projects",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "SC Füssen @Devolti",
+      "group": "projects",
+      "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
+      "image": "students"
+    },
+    {
+      "title": "Haus Ambos @Devolti",
+      "group": "projects",
       "body": "In die Schule bin ich gegangen als ich schon sehr klein War und danach bin ich schnell nach hause und ann wieder so N ANDERS",
       "image": "students"
     }

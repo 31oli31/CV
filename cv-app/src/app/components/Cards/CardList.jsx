@@ -3,8 +3,8 @@ import "./CardList.scss";
 import Card from "./Card/Card";
 
 const CardList = (props) => {
-  const { cards } = { ...props };
-  cards.push({
+  const { cards, cardGroups } = { ...props };
+  /* cards.push({
     title: "Ausbildung",
     preview: (
       <div>
@@ -48,23 +48,43 @@ const CardList = (props) => {
       </p>
     ),
     image: "sstudents",
-  });
+  });*/
+
+  var groupBy = (xs, key) => {
+    return xs.reduce(function (rv, x) {
+      (rv[x[key]] = rv[x[key]] || []).push(x);
+      return rv;
+    }, {});
+  };
+
+  const mapCards = groupBy(cards, "group");
+  console.log(mapCards);
+
   return (
-    <div>
-      <div className="CardList">
-        {cards.map((card) => {
+    <>
+      <div>
+        {Object.keys(mapCards).map((cardGroup) => {
           return (
-            <Card
-              title={card.title}
-              key={Math.random()}
-              preview={card.preview}
-              body={card.body}
-              image={card.image}
-            />
+            <div>
+              <div className="CardGroup">{cardGroups[cardGroup]}</div>
+              <div className="CardList">
+                {mapCards[cardGroup].map((card) => {
+                  return (
+                    <Card
+                      title={card.title}
+                      key={Math.random()}
+                      preview={card.preview}
+                      body={card.body}
+                      image={card.image}
+                    />
+                  );
+                })}
+              </div>
+            </div>
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 
