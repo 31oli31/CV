@@ -9,13 +9,6 @@
     "start": "node ./src/server/prod/prodServer.js"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/plugin-transform-runtime": "^7.15.0",
-    "@babel/preset-env": "^7.15.4",
-    "@babel/preset-react": "^7.14.5",
-    "css-loader": "^6.2.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-react": "^7.25.1",
     "webpack-dev-middleware": "^5.0.0",
     "webpack-hot-middleware": "^2.25.0"
   },
@@ -23,6 +16,13 @@
     "@babel/runtime": "^7.15.4",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@popperjs/core": "^2.10.1",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.25.1",
     "axios": "^0.21.4",
     "babel-loader": "^8.2.2",
     "babel-plugin-css-modules-transform": "^1.6.2",
