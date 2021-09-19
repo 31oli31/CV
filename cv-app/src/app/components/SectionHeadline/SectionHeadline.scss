@@ -1,0 +1,24 @@
+@import "../../theme/default.scss";
+@import "../../theme/selectedTheme.scss";
+
+.SectionHeadline{
+    font-size: 24px;
+    @include themed() {
+      color: t("title");
+      border-bottom-color: t("primary");
+    }
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom-style: solid;
+}
+
+.SectionHeadline2{
+    font-size: 24px;
+    display: inline-block;
+
+    @include themed() {
+      color: t("title");
+      border-bottom-color: t("primary");
+    }
+    border-bottom-style: solid;
+}

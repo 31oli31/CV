@@ -1,0 +1,9 @@
+@import "../../theme/default.scss";
+@import "../../theme/selectedTheme.scss";
+
+.footer{
+    height: 100px;
+    @include themed() {
+        background-color:t("primary");
+      }
+}

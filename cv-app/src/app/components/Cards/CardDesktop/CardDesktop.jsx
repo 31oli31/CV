@@ -1,12 +1,12 @@
 import React from "react";
-import "./Card.scss";
+import "./CardDesktop.scss";
 import CardModal from "../CardModal/CardModal";
-
 import getImage from "../images/index";
 
-const Card = (props) => {
-  const { title, body, image, preview } = { ...props };
+const CardDesktop = (props) => {
   const [modalState, setModalState] = React.useState(false);
+  const { title, body, image, preview } = { ...props };
+  console.log("ttttt");
 
   const closeModal = () => {
     setModalState(false);
@@ -29,8 +29,6 @@ const Card = (props) => {
           <div className="Card-Header">{title}</div>
           <div className="Card-Body hide">
             {preview}
-            <br />
-            Klicken für mehr Infos
           </div>
         </div>
       </div>
@@ -39,4 +37,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default CardDesktop;

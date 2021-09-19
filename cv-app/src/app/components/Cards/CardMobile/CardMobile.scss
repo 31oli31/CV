@@ -1,0 +1,46 @@
+@import "../../../theme/default.scss";
+@import "../../../theme/selectedTheme.scss";
+
+.CardMobile {
+  width:100%;
+  height: 70px;
+  margin-top: 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 22px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 22px -4px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.25s;
+
+  @include themed() {
+    background-color: t("cardBackground");
+  }
+
+ 
+  &:hover {
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+    @include themed() {
+      background-color: t("cardHoverMobile");
+    }
+    
+  }
+  
+
+  &-Header {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    @include themed() {
+      color: t("title");
+    }
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  &:hover * {
+    color: $defaultWhite;
+  }
+
+}

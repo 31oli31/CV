@@ -49,12 +49,12 @@
 }
 .headerText {
   @include themed() {
-    color: t("title");
+    color: t("header");
   }
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 75px;
+  font-size: 65px;
   letter-spacing: 25px;
   word-spacing: -1px;
-  padding-top: 30px;
+  padding-top: 55px;
 }

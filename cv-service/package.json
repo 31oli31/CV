@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "NODE_ENV=production node index.js",
-    "serve": "Browser=none nodemon — exec index.js"
+    "serve": "nodemon — exec index.js"
   },
   "dependencies": {
     "config": "^3.3.6",

@@ -2,8 +2,18 @@
 .navbar-Custom {
   transition:500ms ease;
   background-color: transparent;
-  &-scrolled {
-    background-color: #ffffffab;
-    backdrop-filter: blur(16px);
+  @media (max-width: 991px) {
+    background-color: #eeeeee8f;
+    backdrop-filter: blur(15px);
   }
+  &-scrolled {
+    background-color: #ffffff54;
+    backdrop-filter: blur(15px);
+    border-bottom-style: solid;
+    border-bottom-color: #2d3c4b8a;
+  }
+}
+
+.nav-link-custom:hover{
+  cursor: pointer;
 }

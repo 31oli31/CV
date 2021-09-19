@@ -1,9 +1,15 @@
 import React from "react";
 import "./CardList.scss";
-import Card from "./Card/Card";
+import CardDesktop from "./CardDesktop/CardDesktop";
+import CardMobile from "./CardMobile/CardMobile";
+import SectionHeadline from "../SectionHeadline/SectionHeadline";
+import useWindowDimensions from "../../service/windowDimension";
 
 const CardList = (props) => {
-  const { cards, cardGroups } = { ...props };
+  const { cards, cardGroups, refs } = { ...props };
+  const { height, width } = useWindowDimensions();
+  const showMobile = width<992;
+  console.log(width);
   /* cards.push({
     title: "Ausbildung",
     preview: (
@@ -58,19 +64,31 @@ const CardList = (props) => {
   };
 
   const mapCards = groupBy(cards, "group");
-  console.log(mapCards);
+
 
   return (
     <>
       <div>
         {Object.keys(mapCards).map((cardGroup) => {
           return (
-            <div>
-              <div className="CardGroup">{cardGroups[cardGroup]}</div>
+            <div ref={refs[cardGroup]} className="CardSection">
+              <SectionHeadline text={cardGroups[cardGroup]}/>
               <div className="CardList">
                 {mapCards[cardGroup].map((card) => {
+                  if(showMobile){
+                    return (
+                      <CardMobile
+                        title={card.title}
+                        key={Math.random()}
+                        preview={card.preview}
+                        body={card.body}
+                        image={card.image}
+                      />
+                    );
+                  }
+                  console.log("test")
                   return (
-                    <Card
+                    <CardDesktop
                       title={card.title}
                       key={Math.random()}
                       preview={card.preview}
@@ -78,6 +96,7 @@ const CardList = (props) => {
                       image={card.image}
                     />
                   );
+
                 })}
               </div>
             </div>

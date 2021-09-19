@@ -1,20 +1,23 @@
 import React, { useRef } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Navigation } from "swiper";
+import SwiperCore, { Pagination, Navigation, Mousewheel } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Carosel.scss";
+import "../SectionHeadline/SectionHeadline"
+import SectionHeadline from "../SectionHeadline/SectionHeadline";
 
-SwiperCore.use([Pagination, Navigation]);
-const Carosel = ({ images }) => {
+SwiperCore.use([Pagination, Navigation, Mousewheel]);
+const Carosel = ({ images, refs }) => {
   const swiperRef = React.useRef(null);
   return (
     <>
-      <div class="d-flex flex-nowrap align-items-center">
+      <SectionHeadline text={"Fähigkeiten"} version={2}/>
+      <div ref={refs} class="d-flex flex-nowrap align-items-center swiperContainer">
         <div
           className="swipe-button"
           id="previousButton"
@@ -32,6 +35,7 @@ const Carosel = ({ images }) => {
           pagination={{
             clickable: true,
           }}
+          mousewheel={true}
           breakpoints={{
             640: {
               slidesPerView: 2,

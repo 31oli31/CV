@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.scss";
 
-const Navbar = ({ text, updateText }) => {
+const Navbar = ({ text, updateText, executeScroll }) => {
   const [scrollState, setScrollState] = useState(false);
 
   const changeBackground = () => {
@@ -19,9 +19,8 @@ const Navbar = ({ text, updateText }) => {
 
   return (
     <nav
-      className={`navbar fixed-top navbar-expand-lg navbar-light  ${
-        scrollState ? "navbar-Custom-scrolled" : "navbar-Custom"
-      }`}
+      className={`navbar fixed-top navbar-expand-lg navbar-light  ${scrollState ? "navbar-Custom-scrolled" : "navbar-Custom"
+        }`}
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -41,29 +40,29 @@ const Navbar = ({ text, updateText }) => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('school')}>
                 Ausbildung
-              </a>
+              </label>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('work')}>
                 Arbeit
-              </a>
+              </label>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('intership')}>
                 Praktikum
-              </a>
+              </label>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('projects')}>
                 Projekte
-              </a>
+              </label>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+            <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('skills')}>
                 Fähigkeiten
-              </a>
+              </label>
             </li>
             <li className="nav-item dropdown">
               <a
