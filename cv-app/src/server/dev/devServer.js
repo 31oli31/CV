@@ -6,11 +6,14 @@ const express = require("express");
 const devMiddleware = require("webpack-dev-middleware");
 const hotMiddleware = require("webpack-hot-middleware");
 const config = require("../../../webpack.development.config");
+const cors = require('cors');
+
 const request = require("request");
 const nodeConfig = require("config");
 
 const app = express();
 const compiler = webpack(config);
+app.use(cors());
 
 app.use(
   devMiddleware(compiler, {

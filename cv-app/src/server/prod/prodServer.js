@@ -6,7 +6,10 @@ const express = require("express");
 const path = require("path");
 const request = require("request");
 const nodeConfig = require("config");
+const cors = require('cors');
+
 const app = express();
+
 const BUILD_PATH = "../../../build";
 const PORT = 2000;
 
@@ -23,6 +26,7 @@ const proxy = (url) => {
 };
 
 app.set("port", PORT);
+app.use(cors());
 
 app.use(express.static(path.join(__dirname, BUILD_PATH)));
 
