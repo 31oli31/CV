@@ -3,7 +3,7 @@ import importConfig from './importConfig';
 const value = importConfig();
 console.log( value);
 const api = axios.create({
-  baseURL: `${value.api.cvService}`,
+  baseURL: `${value.app}/api`,
 });
 
 const cachedLanguage = null;
