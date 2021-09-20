@@ -1,7 +1,9 @@
 import axios from "axios";
-
+import importConfig from './importConfig';
+const value = importConfig();
+console.log( value);
 const api = axios.create({
-  baseURL: "http://34.107.50.170/api",
+  baseURL: `${value.app}/api`,
 });
 
 const cachedLanguage = null;

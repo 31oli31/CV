@@ -1,4 +1,5 @@
 {
+  "app":"http://localhost:2000",
   "db": "mongodb://mongo:27018/",
   "api": {
     "cvService": "http://cvservice:2002"
