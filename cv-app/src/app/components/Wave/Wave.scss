@@ -1,7 +1,7 @@
 @import "../../theme/default.scss";
 @import "../../theme/selectedTheme.scss";
 
-@mixin recolor($color: #000, $opacity: 0) {
+@mixin recolor($color: #fff, $opacity: 0) {
   $r: red($color) / 255;
   $g: green($color) / 255;
   $b: blue($color) / 255;
