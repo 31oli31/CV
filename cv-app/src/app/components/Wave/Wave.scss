@@ -32,6 +32,7 @@
     @include recolor(t("wave"), 1);
   }
   background-image: url("../../assets/wave.svg");
+  background: transparent;
   display: block;
   background-repeat: no-repeat;
   min-height: 300px;
