@@ -15,7 +15,7 @@
       color: t("title");
       border-bottom: 1px solid t("darkline");
     }
-    &::hover {
+    &:hover {
       color: red;
     }
   }
