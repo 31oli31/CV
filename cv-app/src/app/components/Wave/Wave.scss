@@ -25,6 +25,7 @@
     </filter>\
   </svg>\
   ##{$svg-filter-id}');
+  background-color: transparent;
 }
 
 .wave {
@@ -32,7 +33,6 @@
     @include recolor(t("wave"), 1);
   }
   background-image: url("../../assets/wave.svg");
-  fill:none;
   display: block;
   background-repeat: no-repeat;
   min-height: 300px;
