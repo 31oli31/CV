@@ -46,6 +46,9 @@
 
 .parent {
   position: relative;
+  @include themed() {
+    background-color: t("background");
+  }
 }
 .headerText {
   @include themed() {
