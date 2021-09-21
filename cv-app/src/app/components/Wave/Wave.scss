@@ -1,7 +1,7 @@
 @import "../../theme/default.scss";
 @import "../../theme/selectedTheme.scss";
 
-@mixin recolor($color: #000, $opacity: 1) {
+@mixin recolor($color: #000, $opacity: 0) {
   $r: red($color) / 255;
   $g: green($color) / 255;
   $b: blue($color) / 255;
@@ -20,6 +20,7 @@
         0 0 0 0 #{$r}\
         0 0 0 0 #{$g}\
         0 0 0 0 #{$b}\
+        0 0 0 #{$a} 0\
       "/>\
     </filter>\
   </svg>\
