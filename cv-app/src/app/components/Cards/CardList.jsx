@@ -3,12 +3,10 @@ import "./CardList.scss";
 import CardDesktop from "./CardDesktop/CardDesktop";
 import CardMobile from "./CardMobile/CardMobile";
 import SectionHeadline from "../SectionHeadline/SectionHeadline";
-import useWindowDimensions from "../../service/windowDimension";
 
 const CardList = (props) => {
-  const { cards, cardGroups, refs } = { ...props };
-  const { height, width } = useWindowDimensions();
-  const showMobile = width<992;
+  const { cards, cardGroups, refs, showMobile } = { ...props };
+;
   /* cards.push({
     title: "Ausbildung",
     preview: (

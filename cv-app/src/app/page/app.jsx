@@ -11,6 +11,8 @@ import Carosel from "../components/Carosel/Carosel";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import getText from "../service/getText";
+import useWindowDimensions from "../service/windowDimension";
+
 import { getImageGroup } from "../service/getImage.js";
 const App = () => {
   const [text, setText] = React.useState(false);
@@ -27,6 +29,9 @@ const App = () => {
   }, []);
 
   const images = getImageGroup("swiper");
+
+  const { height, width } = useWindowDimensions();
+  const showMobile = width<992
 
   const refs = {
     school: React.useRef(null),
@@ -65,13 +70,13 @@ const App = () => {
                     themes={{ light: "hell", dark: "dunkel", blue: "blau" }}
                   />
                 </div>
-                <Introduction />
+                <Introduction showMobile  executeScroll={executeScroll}/>
               </div>
 
             </div>
-            <div className="test container">
+            <div className="test">
               <Carosel images={images} refs={refs.skills} />
-              <CardList {...text} refs={refs} />
+              <CardList {...text} refs={refs} showMobile={showMobile}/>
             </div>
             <Footer />
           </div>

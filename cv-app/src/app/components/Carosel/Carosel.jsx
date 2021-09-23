@@ -18,7 +18,7 @@ const Carosel = ({ images, refs }) => {
     <div className="SectionWhite2">
       <div className="container">
       <SectionHeadline text={"Fähigkeiten"} version={2}/>
-      <div ref={refs} class="d-flex flex-nowrap align-items-center ">
+      <div ref={refs} class="d-flex flex-nowrap align-items-center scroll">
         <div
           className="swipe-button"
           id="previousButton"
