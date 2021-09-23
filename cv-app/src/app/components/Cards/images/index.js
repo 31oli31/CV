@@ -1,5 +1,5 @@
-const students = require("./students.png");
-const sstudents = require("./sstudents.png");
+import students from "./students.png";
+import sstudents from "./sstudents.png";
 
 const getImage = (img) => {
   const images = {

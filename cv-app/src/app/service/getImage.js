@@ -1,15 +1,15 @@
-const docker = require("../assets/swiperSvg/docker.png");
-const express = require("../assets/swiperSvg/Express.png");
-const git = require("../assets/swiperSvg/GitLogo.png");
-const three = require("../assets/swiperSvg/ThreejsLogo.png");
-const htmlLogo = require("../assets/swiperSvg/HtmlLogo.png");
-const jsLogo = require("../assets/swiperSvg/javascript.png");
-const mongo = require("../assets/swiperSvg/MongoDBLogo.png");
-const node = require("../assets/swiperSvg/NodeLogo.png");
-const react = require("../assets/swiperSvg/ReactLogo.png");
-const redux = require("../assets/swiperSvg/ReduxLogo.png");
-const sass = require("../assets/swiperSvg/SassLogo.png");
-const bootstrap = require("../assets/swiperSvg/Bootstrap.png");
+import docker from"../assets/swiperSvg/docker.png";
+import express from"../assets/swiperSvg/Express.png";
+import git from"../assets/swiperSvg/GitLogo.png";
+import three from"../assets/swiperSvg/ThreejsLogo.png";
+import htmlLogo from"../assets/swiperSvg/HtmlLogo.png";
+import jsLogo from"../assets/swiperSvg/javascript.png";
+import mongo from"../assets/swiperSvg/MongoDBLogo.png";
+import node from"../assets/swiperSvg/NodeLogo.png";
+import react from"../assets/swiperSvg/ReactLogo.png";
+import redux from"../assets/swiperSvg/ReduxLogo.png";
+import sass from"../assets/swiperSvg/SassLogo.png";
+import bootstrap from"../assets/swiperSvg/Bootstrap.png";
 
 const vendorImages = {
   docker,

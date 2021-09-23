@@ -20,7 +20,7 @@ const CardDesktop = (props) => {
     <div>
       <div
         style={{
-          backgroundImage: `url(${getImage(image).default})`,
+          backgroundImage: `url(${getImage(image)})`,
         }}
         className="Card"
         onClick={handleCardClick}

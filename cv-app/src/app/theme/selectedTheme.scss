@@ -22,11 +22,12 @@ $defaultWhite: #ffffff;
 
 $orangeTrans: #924c24c9;
 $blueTrans: #0084ff70;
+$darkblueTrans:#00162bb7;
 $orangelightTrans: #ec9e7179;
 $greyTrans: #adadad77;
 $lightGreyTrans: #ffffffc0;
 $blackTrans: #302f2fea;
-
+$transparent: #ffffff00;
 $blackNav: #222427;
 
 $themes: (
@@ -88,6 +89,9 @@ $themes: (
     blur: $prussainBlue,
     navbar: $defaultWhite,
     wave: $culuredGrey,
+    SectionBackground1:$middleBlue,
+    SectionBackground2:$culuredGrey,
+    SectionBackground3:$middleBlue,
   ),
 );
 

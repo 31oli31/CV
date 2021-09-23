@@ -1,10 +1,28 @@
 @import "~theme/default";
 @import "~theme/selectedTheme.scss";
 
+.test{
+  z-index: 10;
+  margin-top: 900px;
+  position: relative;
+  @media (max-width: 990px) {
+    margin-top: 1000px;
+  }
+}
+.t{
+  position: fixed;
+  @media (max-width: 990px) {
+    overflow-y: scroll; //damit mobile geht
+    max-height: 100%;
+  }
+  width: 100vw;
+}
 .app {
   @include themed() {
     background-color: t("background");
   }
+  background-image: url(./assets/pointBackground.png);
+  background-repeat: repeat;
   max-width: 100%;
   overflow-x: hidden;
   min-height: 100vh;

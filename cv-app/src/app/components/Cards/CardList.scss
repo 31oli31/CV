@@ -12,3 +12,31 @@
   margin-bottom: 60px;
   scroll-margin-top: 100px;
 }
+
+.SectionWhite{
+  margin-top:-25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  //@include themed() {
+  //  background-color: t("lightBackground");
+  //}
+}
+
+.SectionBackground1{
+  @include themed() {
+    background-color: t("SectionBackground1");
+  }
+}
+.SectionBackground2{
+  @include themed() {
+    background-color: t("SectionBackground2");
+  }
+}
+.SectionBackground3{
+  @include themed() {
+    background-color: t("SectionBackground3");
+  }
+}

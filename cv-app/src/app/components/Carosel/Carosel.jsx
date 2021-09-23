@@ -15,9 +15,10 @@ SwiperCore.use([Pagination, Navigation, Mousewheel]);
 const Carosel = ({ images, refs }) => {
   const swiperRef = React.useRef(null);
   return (
-    <>
+    <div className="SectionWhite2">
+      <div className="container">
       <SectionHeadline text={"Fähigkeiten"} version={2}/>
-      <div ref={refs} class="d-flex flex-nowrap align-items-center swiperContainer">
+      <div ref={refs} class="d-flex flex-nowrap align-items-center ">
         <div
           className="swipe-button"
           id="previousButton"
@@ -57,7 +58,7 @@ const Carosel = ({ images, refs }) => {
             console.log(img);
             return (
               <SwiperSlide>
-                <img src={images[img].default} />
+                <img src={images[img]} />
               </SwiperSlide>
             );
           })}
@@ -70,7 +71,8 @@ const Carosel = ({ images, refs }) => {
           <i class="fas fa-chevron-circle-right fa-2x"></i>
         </div>
       </div>
-    </>
+    </div>
+    </div>
   );
 };
 

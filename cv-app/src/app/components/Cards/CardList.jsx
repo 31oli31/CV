@@ -9,7 +9,6 @@ const CardList = (props) => {
   const { cards, cardGroups, refs } = { ...props };
   const { height, width } = useWindowDimensions();
   const showMobile = width<992;
-  console.log(width);
   /* cards.push({
     title: "Ausbildung",
     preview: (
@@ -62,16 +61,24 @@ const CardList = (props) => {
       return rv;
     }, {});
   };
-
+  
   const mapCards = groupBy(cards, "group");
-
-
+  const sectionBackgrounds = ["SectionBackground1","SectionBackground2","SectionBackground3"];
+  const sectionBackground = {};
+  Object.keys(cardGroups).map((group, index)=> {
+    sectionBackground[group] = sectionBackgrounds[index%2];
+    return null;
+  });
+  
+console.log(sectionBackground);
   return (
     <>
       <div>
         {Object.keys(mapCards).map((cardGroup) => {
+          console.log(sectionBackground[cardGroup])
           return (
-            <div ref={refs[cardGroup]} className="CardSection">
+            <div className={`SectionWhite ${sectionBackground[cardGroup]}`}>
+            <div ref={refs[cardGroup]} className="CardSection container">
               <SectionHeadline text={cardGroups[cardGroup]}/>
               <div className="CardList">
                 {mapCards[cardGroup].map((card) => {
@@ -86,7 +93,6 @@ const CardList = (props) => {
                       />
                     );
                   }
-                  console.log("test")
                   return (
                     <CardDesktop
                       title={card.title}
@@ -99,6 +105,7 @@ const CardList = (props) => {
 
                 })}
               </div>
+            </div>
             </div>
           );
         })}
