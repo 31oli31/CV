@@ -69,7 +69,7 @@ const App = () => {
               </div>
 
             </div>
-            <div className="test">
+            <div className="test container">
               <Carosel images={images} refs={refs.skills} />
               <CardList {...text} refs={refs} />
             </div>
