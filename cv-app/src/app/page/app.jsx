@@ -31,7 +31,8 @@ const App = () => {
   const images = getImageGroup("swiper");
 
   const { height, width } = useWindowDimensions();
-  const showMobile = width<992
+  const showMobile = width<992;
+  console.log(width, showMobile);
 
   const refs = {
     school: React.useRef(null),
@@ -46,7 +47,7 @@ const App = () => {
     const ref = refs[refName];
     console.log(ref);
 
-    ref.current.scrollIntoView();
+    ref.current.scrollIntoView({behavior:'smooth'});
   };
 
   return (
@@ -70,7 +71,7 @@ const App = () => {
                     themes={{ light: "hell", dark: "dunkel", blue: "blau" }}
                   />
                 </div>
-                <Introduction showMobile  executeScroll={executeScroll}/>
+                <Introduction showMobile={showMobile}  executeScroll={executeScroll}/>
               </div>
 
             </div>
