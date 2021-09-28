@@ -4,12 +4,16 @@
 .test{
   margin-top: 900px;
   position: relative;
+
   @media (max-width: 990px) {
-    margin-top: 800px;
+    margin-top: 100vh;
   }
 }
 .t{
   position: fixed;
+  height: 100vh;
+  background-image: url(./assets/pointBackground.png);
+  background-repeat: repeat;
   @media (max-width: 990px) {
 
   }
@@ -19,8 +23,6 @@
   @include themed() {
     background-color: t("background");
   }
-  background-image: url(./assets/pointBackground.png);
-  background-repeat: repeat;
   max-width: 100%;
   overflow-x: hidden;
   min-height: 100vh;

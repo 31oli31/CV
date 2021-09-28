@@ -9,7 +9,7 @@ import node from"../assets/swiperSvg/NodeLogo.png";
 import react from"../assets/swiperSvg/ReactLogo.png";
 import redux from"../assets/swiperSvg/ReduxLogo.png";
 import sass from"../assets/swiperSvg/SassLogo.png";
-import bootstrap from"../assets/swiperSvg/Bootstrap.png";
+import bootstrapImg from"../assets/swiperSvg/Bootstrap.png";
 
 const vendorImages = {
   docker,
@@ -24,7 +24,7 @@ const vendorImages = {
   three,
   htmlLogo,
   jsLogo,
-  bootstrap,
+  bootstrapImg,
 };
 const cardBackground = {};
 const imageGroup = { swiper: vendorImages, cardBackground: cardBackground };

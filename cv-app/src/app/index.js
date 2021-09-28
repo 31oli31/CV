@@ -6,10 +6,11 @@ import { Router } from "react-router-dom";
 
 import AppRouter from "./AppRouter";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import "@popperjs/core/dist/umd/popper.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/js/all.min.js";
-import "@popperjs/core";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import "./index.scss";
 import { createBrowserHistory } from "history";
 

@@ -1,0 +1,63 @@
+@import "../../../theme/default.scss";
+@import "../../../theme/selectedTheme.scss";
+
+.CardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.CardSection {
+  margin-bottom: 10px;
+  scroll-margin-top: 100px;
+  &-headline{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    @include themed() {
+      color: t("title");
+      border-bottom-color: t("primary");
+    }
+    margin-bottom: 20px;
+    border-bottom-style: solid;
+  }
+}
+
+.SectionWhite {
+  margin-top: -25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+
+  //@include themed() {
+  //  background-color: t("lightBackground");
+  //}
+}
+
+.mobileSection{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.SectionBackground1 {
+  @include themed() {
+    background-color: t("SectionBackground1");
+    color: t("textlight");
+    border-bottom-color: t("textlight");
+  }
+}
+.SectionBackground2 {
+  @include themed() {
+    background-color: t("SectionBackground2");
+    color: t("title");
+    border-bottom-color: t("primary");
+  }
+}
+.SectionBackground3 {
+  @include themed() {
+    background-color: t("SectionBackground3");
+    color: t("title");
+    border-bottom-color: t("primary");
+  }
+}

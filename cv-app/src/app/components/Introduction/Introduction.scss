@@ -1,12 +1,45 @@
 @import "../../theme/default.scss";
 @import "../../theme/selectedTheme.scss";
 
-.Introduction {
-  padding-bottom: 30px;
+.bottomSection {
+  padding-top: 10px;
+  margin: auto;
+  @include themed() {
+    color: t("buttonColor");
+  }
+}
 
+.mobilContent{
+  height: calc(100vh - 460px);
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollButton{
+  width: 100%;
+}
+
+.Introduction {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  
   &-content {
     margin-top: 20px;
     display: flex;
+  }
+  &-InfoButton{
+   width: 100%;
+    margin-top: 10px;
+    min-height: 50px;
+  }
+  &-Mobile{
+    &-Image{
+      flex: 2;
+      min-height: 10px;
+      align-self: center;
+      margin-bottom: 10px;
+    }
   }
   &-text {
     flex: 1;
@@ -17,7 +50,6 @@
     flex: 2;
     display: block;
     margin: auto;
-
     max-width: 350px;
     max-height: 100%;
     border-radius: 25px;

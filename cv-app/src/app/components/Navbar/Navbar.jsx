@@ -39,32 +39,32 @@ const Navbar = ({ text, updateText, executeScroll }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('school')}>
+            <li >
+              <label className="nav-link nav-link-custom" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() => executeScroll('school')}>
                 Ausbildung
               </label>
             </li>
-            <li className="nav-item">
-              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('work')}>
+            <li >
+              <label className="nav-link nav-link-custom"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() => executeScroll('work')}>
                 Arbeit
               </label>
             </li>
-            <li className="nav-item">
-              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('intership')}>
+            <li >
+              <label className="nav-link nav-link-custom" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() => executeScroll('intership')}>
                 Praktikum
               </label>
             </li>
-            <li className="nav-item">
-              <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('projects')}>
+            <li >
+              <label className="nav-link nav-link-custom" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() => executeScroll('projects')}>
                 Projekte
               </label>
             </li>
-            <li className="nav-item">
-            <label className="nav-link nav-link-custom" value="school" onClick={() => executeScroll('skills')}>
+            <li >
+            <label className="nav-link nav-link-custom" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" onClick={() => executeScroll('skills')}>
                 Fähigkeiten
               </label>
             </li>
-            <li className="nav-item dropdown">
+            <li className="nav-item dropdown" >
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -75,7 +75,7 @@ const Navbar = ({ text, updateText, executeScroll }) => {
               >
                 {text.type == "german" ? "de" : "en"}
               </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                 <li>
                   <button
                     class="dropdown-item"

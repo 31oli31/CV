@@ -1,18 +1,21 @@
 @import "../../theme/selectedTheme.scss";
 
-.SectionWhite2{
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+.SectionWhite2 {
   margin-top: -10px;
   width: 100%;
-  padding-top:30px;
+  padding-top: 30px;
   padding-bottom: 55px;
   @include themed() {
     background-color: t("lightBackground");
   }
 }
 
-.scroll{
+.showMobile {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.scroll {
   scroll-margin-top: 300px;
 }
 .swiper {
@@ -72,4 +75,3 @@
     cursor: pointer;
   }
 }
-

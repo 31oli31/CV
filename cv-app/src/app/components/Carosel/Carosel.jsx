@@ -12,10 +12,11 @@ import "../SectionHeadline/SectionHeadline"
 import SectionHeadline from "../SectionHeadline/SectionHeadline";
 
 SwiperCore.use([Pagination, Navigation, Mousewheel]);
-const Carosel = ({ images, refs }) => {
+const Carosel = ({ images, refs, mobileShow }) => {
   const swiperRef = React.useRef(null);
+  const mobileSytle = mobileShow ? "mobileStyle" : null;
   return (
-    <div className="SectionWhite2">
+    <div className={`SectionWhite2 ${mobileSytle}`}>
       <div className="container">
       <SectionHeadline text={"Fähigkeiten"} version={2}/>
       <div ref={refs} class="d-flex flex-nowrap align-items-center scroll">

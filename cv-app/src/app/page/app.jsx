@@ -32,7 +32,6 @@ const App = () => {
 
   const { height, width } = useWindowDimensions();
   const showMobile = width<992;
-  console.log(width, showMobile);
 
   const refs = {
     school: React.useRef(null),
@@ -60,6 +59,7 @@ const App = () => {
               updateText={updateText}
               executeScroll={executeScroll}
             />
+            
             <div className="t">
               <Wave />
               <div className="container">
@@ -76,11 +76,12 @@ const App = () => {
 
             </div>
             <div className="test">
-              <Carosel images={images} refs={refs.skills} />
+              <Carosel images={images} refs={refs.skills} showMobile={showMobile} />
               <CardList {...text} refs={refs} showMobile={showMobile}/>
-            </div>
             <Footer />
+            </div>
           </div>
+          
         </ThemeProvider>
       ) : (
         <div>loading</div>

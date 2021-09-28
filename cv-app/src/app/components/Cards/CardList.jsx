@@ -1,12 +1,8 @@
 import React from "react";
-import "./CardList.scss";
-import CardDesktop from "./CardDesktop/CardDesktop";
-import CardMobile from "./CardMobile/CardMobile";
-import SectionHeadline from "../SectionHeadline/SectionHeadline";
+import CardSection from "./CardSection/CardSection";
 
 const CardList = (props) => {
-  const { cards, cardGroups, refs, showMobile } = { ...props };
-;
+  const { cards } = { ...props };
   /* cards.push({
     title: "Ausbildung",
     preview: (
@@ -59,52 +55,15 @@ const CardList = (props) => {
       return rv;
     }, {});
   };
-  
+
   const mapCards = groupBy(cards, "group");
-  const sectionBackgrounds = ["SectionBackground1","SectionBackground2","SectionBackground3"];
-  const sectionBackground = {};
-  Object.keys(cardGroups).map((group, index)=> {
-    sectionBackground[group] = sectionBackgrounds[index%2];
-    return null;
-  });
-  
-console.log(sectionBackground);
+
   return (
     <>
       <div>
         {Object.keys(mapCards).map((cardGroup) => {
-          console.log(sectionBackground[cardGroup])
           return (
-            <div className={`SectionWhite ${sectionBackground[cardGroup]}`}>
-            <div ref={refs[cardGroup]} className="CardSection container">
-              <SectionHeadline text={cardGroups[cardGroup]}/>
-              <div className="CardList">
-                {mapCards[cardGroup].map((card) => {
-                  if(showMobile){
-                    return (
-                      <CardMobile
-                        title={card.title}
-                        key={Math.random()}
-                        preview={card.preview}
-                        body={card.body}
-                        image={card.image}
-                      />
-                    );
-                  }
-                  return (
-                    <CardDesktop
-                      title={card.title}
-                      key={Math.random()}
-                      preview={card.preview}
-                      body={card.body}
-                      image={card.image}
-                    />
-                  );
-
-                })}
-              </div>
-            </div>
-            </div>
+            <CardSection {...props} cardGroup={cardGroup} mapCards={mapCards}/>
           );
         })}
       </div>
