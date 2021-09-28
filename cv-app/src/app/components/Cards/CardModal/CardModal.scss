@@ -1,11 +1,8 @@
 @import "../../../theme/selectedTheme.scss";
 
 #bootstrap-overrides {
-  /* 100+1=101 priority score, yay! */
-
   .modal-content {
     @include themed() {
-      background-color: t("lightBackground");
       color: t("text");
     }
     border-radius: 20px;
@@ -14,9 +11,6 @@
     @include themed() {
       color: t("title");
       border-bottom: 1px solid t("darkline");
-    }
-    &:hover {
-      color: red;
     }
   }
   .btn-close {
@@ -35,8 +29,4 @@
   @include themed() {
     backdrop-filter: blur(16px);
   }
-}
-
-#title {
-  color: red;
 }
