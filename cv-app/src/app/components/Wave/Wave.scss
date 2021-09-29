@@ -33,8 +33,9 @@
   }
   background-image: url("../../assets/wave.svg");
   display: block;
+  transform: rotate(180deg);
   background-repeat: no-repeat;
-  min-height: 250px;
+  min-height: 300px;
 }
 .overlay {
   position: absolute;
