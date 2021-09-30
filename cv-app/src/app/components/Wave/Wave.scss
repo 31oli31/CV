@@ -1,6 +1,7 @@
 @import "../../theme/default.scss";
 @import "../../theme/selectedTheme.scss";
 
+
 @mixin recolor($color: #fff, $opacity: 0) {
   $r: red($color) / 255;
   $g: green($color) / 255;
@@ -25,6 +26,27 @@
     </filter>\
   </svg>\
   ##{$svg-filter-id}');
+}
+
+.waveImg{
+  width: 100%;
+  transform: rotate(180deg);
+  @include themed() {
+    @include recolor(t("wave"), 1);
+  }
+}
+.wave3 {
+  @include themed() {
+    @include recolor(t("wave"), 1);
+  }
+  clip-path: url("../../assets/wave2.svg");
+  display: block;
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  min-height: 300px;
+  //background-image: url("data:image/svg+xml;charset=utf-8,<svg height='300px' version='1.1' xmlns='http://www.w3.org/2000/svg'><path d='m0 67c273 116 822-107 1920 39v253h-1920v-292z'><animate attributeName='d' attributeType='XML' dur='15s' repeatCount='indefinite' values=' M0 77 C 473,283 822,-40 1920,116 V 359 H 0 V 67 Z; M0 77 C 473,-40 1222,283 1920,136 V 359 H 0 V 67 Z; M0 77 C 973,260 1722,-53 1920,120 V 359 H 0 V 67 Z; M0 77 C 473,283 822,-40 1920,116 V 359 H 0 V 67 Z '></animate></path></svg>")
+  // mask: url("../../assets/wave2.svg");
+
 }
 
 .wave {
