@@ -23,6 +23,9 @@ $defaultWhite: #ffffff;
 $orangeTrans: #924c24c9;
 $blueTrans: #0084ff70;
 $darkblueTrans:#00162bb7;
+$lightBlurBlack:#00000075;
+$lightBlurBlue:#002e5893;
+
 $orangelightTrans: #ec9e7179;
 $greyTrans: #adadad77;
 $lightGreyTrans: #ffffffc0;
@@ -47,6 +50,7 @@ $themes: (
     blur: $blackTrans,
     navbar: $blackNav,
     wave: $culuredGrey,
+    backdrop:$lightBlurBlack,
   ),
   dark: (
     primary: $orangeCustom,
@@ -67,6 +71,7 @@ $themes: (
     blur: $orangelightTrans,
     navbar: $blackNav,
     wave: $culuredGrey,
+    backdrop:$lightBlurBlack,
   ),
   blue: (
     primary: $middleBlue,
@@ -90,6 +95,7 @@ $themes: (
     blur: $prussainBlue,
     navbar: $defaultWhite,
     wave: $culuredGrey,
+    backdrop:$lightBlurBlue,
     SectionBackground1:$middleBlue,
     SectionBackground2:$culuredGrey,
     SectionBackground3:$middleBlue,

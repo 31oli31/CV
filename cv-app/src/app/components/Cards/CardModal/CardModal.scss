@@ -27,10 +27,12 @@
 }
 .modal-backdrop {
   z-index: -1 !important;
+  background-color: transparent !important;
 }
   
 .modal {
   @include themed() {
     backdrop-filter: blur(16px);
+    background-color: t("backdrop");
   }
 }
