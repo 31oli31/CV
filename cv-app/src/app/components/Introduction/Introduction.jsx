@@ -35,13 +35,13 @@ const Introduction = ({ showMobile, executeScroll, text }) => {
         </>
       ) : (
         <div className="Introduction-content">
-          <div class=" Introduction-text">
+          <div className=" Introduction-text">
             Hallo ich bin Oliver, ich studiere Wirtschaftsinformatik und bin 23
             Jahre alt. In der Vergangenheit habe ich verschiedenste
             Programmiererfahrungen, im besonderen im breich der Webentwicklung
             mit React gesammelt.
           </div>
-          <div class="">
+          <div className="">
             <img className="Introduction-image" src={image} />
           </div>
         </div>

@@ -25,7 +25,6 @@ module.exports = (api) => {
       );
       return res.json(files);
     } catch (err) {
-      console.log("fallback");
       try {
         const text = await textService.getText(language);
         return res.json(text);

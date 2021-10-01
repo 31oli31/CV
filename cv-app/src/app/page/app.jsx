@@ -42,9 +42,7 @@ const App = () => {
   };
 
   const executeScroll = (refName) => {
-    console.log(refName);
     const ref = refs[refName];
-    console.log(ref);
 
     ref.current.scrollIntoView({behavior:'smooth'});
   };

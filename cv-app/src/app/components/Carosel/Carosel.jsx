@@ -19,13 +19,13 @@ const Carosel = ({ images, refs, mobileShow }) => {
     <div className={`SectionWhite2 ${mobileSytle}`}>
       <div className="container">
       <SectionHeadline text={"Fähigkeiten"} version={2}/>
-      <div ref={refs} class="d-flex flex-nowrap align-items-center scroll">
+      <div ref={refs} className="d-flex flex-nowrap align-items-center scroll">
         <div
           className="swipe-button"
           id="previousButton"
           onClick={() => swiperRef.current.swiper.slidePrev()}
         >
-          <i class="fas fa-chevron-circle-left fa-2x"></i>
+          <i className="fas fa-chevron-circle-left fa-2x"></i>
         </div>
 
         <Swiper
@@ -56,9 +56,8 @@ const Carosel = ({ images, refs, mobileShow }) => {
           ref={swiperRef}
         >
           {Object.keys(images).map((img) => {
-            console.log(img);
             return (
-              <SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                 <img src={images[img]} />
               </SwiperSlide>
             );
@@ -69,7 +68,7 @@ const Carosel = ({ images, refs, mobileShow }) => {
           id="nextButton"
           onClick={() => swiperRef.current.swiper.slideNext()}
         >
-          <i class="fas fa-chevron-circle-right fa-2x"></i>
+          <i className="fas fa-chevron-circle-right fa-2x"></i>
         </div>
       </div>
     </div>

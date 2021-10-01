@@ -66,7 +66,7 @@ const Navbar = ({ text, updateText, executeScroll }) => {
             </li>
             <li className="nav-item dropdown" >
               <a
-                class="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDarkDropdownMenuLink"
                 role="button"
@@ -75,10 +75,10 @@ const Navbar = ({ text, updateText, executeScroll }) => {
               >
                 {text.type == "german" ? "de" : "en"}
               </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                 <li>
                   <button
-                    class="dropdown-item"
+                    className="dropdown-item"
                     onClick={updateText}
                     value="german"
                   >
@@ -87,7 +87,7 @@ const Navbar = ({ text, updateText, executeScroll }) => {
                 </li>
                 <li>
                   <button
-                    class="dropdown-item"
+                    className="dropdown-item"
                     onClick={updateText}
                     value="english"
                   >

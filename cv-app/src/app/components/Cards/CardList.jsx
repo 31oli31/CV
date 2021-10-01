@@ -63,7 +63,7 @@ const CardList = (props) => {
       <div>
         {Object.keys(mapCards).map((cardGroup) => {
           return (
-            <CardSection {...props} cardGroup={cardGroup} mapCards={mapCards}/>
+            <CardSection {...props} key={cardGroup}cardGroup={cardGroup} mapCards={mapCards}/>
           );
         })}
       </div>

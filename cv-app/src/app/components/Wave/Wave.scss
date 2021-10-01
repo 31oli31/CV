@@ -1,68 +1,11 @@
 @import "../../theme/default.scss";
 @import "../../theme/selectedTheme.scss";
 
-@include themed() {
-  $ress: t("wave");
-}
-@mixin recolor($color: #fff, $opacity: 0) {
-  $r: red($color) / 255;
-  $g: green($color) / 255;
-  $b: blue($color) / 255;
-  $a: $opacity;
-
-  // grayscale fallback if SVG from data url is not supported
-  $lightness: lightness($color);
-  filter: saturate(0%) brightness(0%) invert($lightness) opacity($opacity);
-
-  // color filter
-  $svg-filter-id: "recolor";
-  filter: url('data:image/svg+xml;utf8,\
-  <svg xmlns="http://www.w3.org/2000/svg">\
-    <filter id="#{$svg-filter-id}" color-interpolation-filters="sRGB">\
-      <feColorMatrix type="matrix" values="\
-        0 0 0 0 #{$r}\
-        0 0 0 0 #{$g}\
-        0 0 0 0 #{$b}\
-        0 0 0 #{$a} 0\
-      "/>\
-    </filter>\
-  </svg>\
-  ##{$svg-filter-id}');
-}
-
-.waveImg{
-  width: 100%;
-  transform: rotate(180deg);
-}
-svg {
-  fill: red;
-}
-.svgss{
+.wave{
   @include themed() {
    fill: t("wave");
   }
   transform: rotate(180deg);
-}
-.wave3 {
-  background-image: url("../../assets/wave2.svg");
-  fill:red;
-  display: block;
-  background-repeat: no-repeat;
-  min-height: 300px;
-  //background-image: url("data:image/svg+xml;charset=utf-8,<svg height='300px' version='1.1' xmlns='http://www.w3.org/2000/svg'><path d='m0 67c273 116 822-107 1920 39v253h-1920v-292z'><animate attributeName='d' attributeType='XML' dur='15s' repeatCount='indefinite' values=' M0 77 C 473,283 822,-40 1920,116 V 359 H 0 V 67 Z; M0 77 C 473,-40 1222,283 1920,136 V 359 H 0 V 67 Z; M0 77 C 973,260 1722,-53 1920,120 V 359 H 0 V 67 Z; M0 77 C 473,283 822,-40 1920,116 V 359 H 0 V 67 Z '></animate></path></svg>")
-  // mask: url("../../assets/wave2.svg");
-
-}
-
-.wave {
-  @include themed() {
-    @include recolor(t("wave"), 1);
-  }
-  background-image: url("../../assets/wave.svg");
-  display: block;
-  transform: rotate(180deg);
-  background-repeat: no-repeat;
-  min-height: 300px;
 }
 .overlay {
   position: absolute;

@@ -6,7 +6,6 @@ import getImage from "../images/index";
 const CardDesktop = (props) => {
   const [modalState, setModalState] = React.useState(false);
   const { title, body, image, preview } = { ...props };
-  console.log("ttttt");
 
   const closeModal = () => {
     setModalState(false);

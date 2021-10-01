@@ -31,7 +31,6 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, BUILD_PATH)));
 
 app.get(`/api/text/get/:language`, async (req, res) => {
-  console.log(nodeConfig.api);
   const result = await proxy(
     `${nodeConfig.api.cvService}/text/get/${req.params.language}`
   );

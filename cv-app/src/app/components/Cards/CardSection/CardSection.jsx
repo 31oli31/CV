@@ -78,17 +78,17 @@ const CardSection = (props) => {
       >
         <div ref={refs[cardGroup]} className="CardSection container">
           <div
+            type="button"
+            onClick={handleCollapse}
+            data-bs-toggle="collapse"
+            data-bs-target={`#${cardGroup}`}
+            aria-expanded="false"
+            aria-controls={cardGroup}
+          >
+          <div
             className={`CardSection-headline  ${sectionBackground[cardGroup]}`}
           >
             {cardGroups[cardGroup]}
-            <div
-              type="button"
-              onClick={handleCollapse}
-              data-bs-toggle="collapse"
-              data-bs-target={`#${cardGroup}`}
-              aria-expanded="false"
-              aria-controls={cardGroup}
-            >
               {isCollapsed ? (
                 <FontAwesomeIcon icon={["fas", "chevron-up"]} size="1x" />
               ) : (

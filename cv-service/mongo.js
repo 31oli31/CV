@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 const config = require("config");
 
-console.log(config.url, "asdf", process.env.NODE_ENV);
-
 const connectionString = `${config.url.mongodb}cv`;
 
 try {

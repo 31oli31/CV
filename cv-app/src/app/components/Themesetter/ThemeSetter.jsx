@@ -7,12 +7,11 @@ const ThemeSetter = ({ themes }) => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const themeArray = Object.keys(themes);
-  console.log(theme);
   return (
     <>
       <div className="dropdown">
         <button
-          class="btn btn-secondary dropdown-toggle"
+          className="btn btn-secondary dropdown-toggle"
           type="button"
           id="dropdownMenuButton1"
           data-bs-toggle="dropdown"
@@ -21,13 +20,12 @@ const ThemeSetter = ({ themes }) => {
           Style ({themes[theme]})
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          {themeArray.map((option, idx) => (
-            <li>
+          {themeArray.map((option) => (
+              <li key={ Math.random()}>
               <button
-                class="dropdown-item"
+                className="dropdown-item"
                 onClick={(e) => setTheme(e.currentTarget.value)}
                 value={option}
-                key={idx}
               >
                 {themes[option]}{" "}
               </button>

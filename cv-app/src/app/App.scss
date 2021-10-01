@@ -45,6 +45,9 @@
 }
 
 #bootstrap-overrides {
+.modal-content {
+    z-index: 1100;
+}
   .btn-primary {
     border-radius: 20px;
     border-width: 2px;

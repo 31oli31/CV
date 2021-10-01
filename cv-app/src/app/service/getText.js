@@ -1,7 +1,6 @@
 import axios from "axios";
 import importConfig from './importConfig';
 const value = importConfig();
-console.log( value);
 const api = axios.create({
   baseURL: `/api`,
 });

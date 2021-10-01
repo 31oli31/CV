@@ -6,7 +6,6 @@ import getImage from "../images/index";
 const CardMobile = (props) => {
   const [modalState, setModalState] = React.useState(false);
   const { title, body, image, preview, collapse } = { ...props };
-  console.log("asdfas");
 
   const closeModal = () => {
     setModalState(false);
