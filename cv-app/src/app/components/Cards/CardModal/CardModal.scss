@@ -25,7 +25,9 @@
     }
   }
 }
-
+.modal-backdrop {
+  z-index: -1 !important;
+}
   
 .modal {
   @include themed() {
