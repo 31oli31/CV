@@ -5,6 +5,7 @@
     @include themed() {
       color: t("text");
     }
+    z-index: 1200;
     border-radius: 20px;
   }
   .modal-header {
@@ -25,6 +26,7 @@
   }
 }
 
+  
 .modal {
   @include themed() {
     backdrop-filter: blur(16px);
